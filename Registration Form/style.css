@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+:root {
+  --bg-light-green: #015D52;
+  --bg-green-yellow: #5D9B9B;
+  --b-dark-yellow: #BEBD7F;
+  --b-light-yellow: #57A639;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  background-image: linear-gradient(to right, #2980B9, #6DD5FA , #FFFFFF);
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: solid 2px #D07CA4;
+  color: white;
+}
+
+.d-flex {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-bar .active:hover{
+  transition: 0.5s;
+  color: #C04000;
+  -webkit-text-stroke: 0.3px #111;
+  text-shadow: 5px 5px 7px #FFFDD0;
+}
+.students {
+  display: flex;
+  gap: 10px;
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(135deg, #FFEFBA , #FFFFFF); 
+}
+
+.enroll-student {
+  margin-top: 30px;
+  padding-top: 50px;
+  margin-left: 25px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  background: rgba(235, 235, 243, 0.2);
+  border-radius: 35px;
+  width: 45%;
+  height:600px;
+}
+
+.enroll-student:hover{
+  box-shadow: 0 0 15px rgb(0,0,0, 0.6);
+  transition: 0.5s;
+}
+
+#enrolled-students {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  justify-content: center;
+  width: 55%;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+}
+
+.enroll-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gender {
+  padding-left: 15px;
+}
+
+.label {
+  display: flex;
+  font-size: 30px;
+}
+
+.form-control {
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 5px rgb(0,0,0,0.5);
+}
+
+.col-sm-2{
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: underline;
+}
+.col-form-lebel{
+  font-size: 50px;
+}
+.seperation-border {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px 0px var(--bg-light-green);
+  width: 1.3px;
+  height: 87vh;
+  background: var(--bg-light-green);
+}
+
+@media screen and (max-width: 768px) {
+  hr.seperation-border{
+    height: 0;
+  }
+}
+
+#submit{
+  padding:15px 25px; 
+  margin-left:100px;
+}
+#cancel{
+  padding:15px 50px; 
+  margin-left:100px;
+}
+.btn{
+  box-sizing: border-box;
+  padding: 0 10px;
+  box-shadow: 0 5px 5px rgb(0,0,0,0.5);
+}
+.btnsuccess{
+  box-sizing: border-box;
+  box-shadow: 0 5px 5px rgb(0,0,0,0.5);
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-green-yellow);
+  color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.sectionHeading > p {
+  padding: 10px 12px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.description {
+  box-sizing: border-box;
+  border-right: solid 2px var(--b-dark-yellow);
+  margin-bottom: 0;
+  width: 70%;
+}
+
+.Image {
+  margin-bottom: 0;
+  border-radius: 20px;
+  width: 30%;
+}
+
+.infoText {
+  margin: 0;
+  padding: 0;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 170px;
+  justify-content: space-between;
+  border-top: none;
+  animation: fadeIn 2s;
+  position: relative;
+  background-color: rgba(235, 235, 243, 0.2);
+  box-shadow: 0 10px 7px rgb(0,0,0,0.5);
+  border-radius: 20px;
+}
+
+.userDeleteBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  transform: rotate(45deg);
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  button.userDeleteBtn {
+    display:block;
+  }
+  
+}
+
+.wrapper:hover .userDeleteBtn {
+  display: block;
+}
+
+.textInfoContainer {
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+  border-right: solid 2px var(--b-dark-yellow);
+  padding: 10px;
+}
+
+.imageContainer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.userImage {
+  padding: 10px 0;
+  height: 140px;
+  width: 120px;
+}
+
+.fadeIn {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
